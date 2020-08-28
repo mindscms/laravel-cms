@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-lg-6 offset-md-3">
                     <div class="my__account__wrapper">
-                        <h3 class="account__title">Login</h3>
+                        <h3 class="account__title">Reset Password</h3>
                         {!! Form::open(['route' => 'password.update', 'method' => 'post']) !!}
                         <input type="hidden" name="token" value="{{ $token }}">
                         <div class="account__form">
