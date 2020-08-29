@@ -21,9 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="002c99af-ee21-40bb-a13a-e170afd8d80c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/IndexController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/posts/test-first-post-2-1598734574-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/users/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/users/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partial/frontend/users/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partial/frontend/users/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -215,7 +215,7 @@
       <workItem from="1597497193984" duration="3451000" />
       <workItem from="1597620350552" duration="2126000" />
       <workItem from="1597686133435" duration="32859000" />
-      <workItem from="1598709004597" duration="12823000" />
+      <workItem from="1598709004597" duration="18877000" />
     </task>
     <servers />
   </component>
@@ -239,10 +239,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2690" y="399" key="#Composer/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597266072061" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598403275241">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598740096775">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598403275241" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598740096775" />
     <state x="706" y="243" key="NewPhpClassDialog" timestamp="1597272795451">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -259,9 +259,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="990" y="225" width="585" height="592" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598735008918" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1598404265716">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1598741802688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598404265716" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598741802688" />
   </component>
 </project>
