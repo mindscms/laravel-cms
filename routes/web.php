@@ -19,6 +19,10 @@ Route::post('email/resend',                     ['as' => 'verification.resend', 
 
 Route::group(['middleware' => 'verified'], function () {
     Route::get('/dashboard',                    ['as' => 'frontend.dashboard',              'uses' => 'Frontend\UsersController@index']);
+
+
+    Route::get('/create-post',                  ['as' => 'users.post.create',               'uses' => 'Frontend\UsersController@create_post']);
+    Route::post('/create-post',                 ['as' => 'users.post.store',                'uses' => 'Frontend\UsersController@store_post']);
 });
 
 

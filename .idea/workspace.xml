@@ -20,10 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="002c99af-ee21-40bb-a13a-e170afd8d80c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/mindscms-blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mindscms-blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/Auth/ForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/Auth/ForgotPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/auth/passwords/reset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/auth/verify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/users/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/users/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partial/frontend/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partial/frontend/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,6 +168,8 @@
       <path value="$PROJECT_DIR$/vendor/cviebrock/eloquent-sluggable" />
       <path value="$PROJECT_DIR$/vendor/nicolaslopezj/searchable" />
       <path value="$PROJECT_DIR$/vendor/predis/predis" />
+      <path value="$PROJECT_DIR$/vendor/stevebauman/purify" />
+      <path value="$PROJECT_DIR$/vendor/ezyang/htmlpurifier" />
     </include_path>
   </component>
   <component name="ProjectId" id="1g0yxSu2CLZ766elmjKjgvaQann" />
@@ -175,22 +184,23 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/posts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/frontend/js/bootstrap-fileinput" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\public\assets\posts" />
-      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\resources\views\frontend" />
-      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\resources\views\vendor\pagination" />
-      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\public\frontend\css" />
-      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\public\frontend" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\app\Http\Controllers\Backend" />
       <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\resources\views\frontend" />
       <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\app\Models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\public\frontend\js\bootstrap-fileinput" />
+      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\public\frontend\js\summernote" />
+      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\public\assets\users" />
+      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\public\assets\posts" />
+      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\resources\views\frontend" />
     </key>
   </component>
   <component name="RunManager">
@@ -212,6 +222,7 @@
       <workItem from="1597497193984" duration="3451000" />
       <workItem from="1597620350552" duration="2126000" />
       <workItem from="1597686133435" duration="32859000" />
+      <workItem from="1598709004597" duration="9636000" />
     </task>
     <servers />
   </component>
@@ -243,10 +254,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="706" y="243" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597272795451" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1597967571832">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1598710036547">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597967571832" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598710036547" />
     <state x="860" y="272" key="SettingsEditor" timestamp="1598306476554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

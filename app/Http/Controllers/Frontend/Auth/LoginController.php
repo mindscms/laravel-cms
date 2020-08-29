@@ -53,7 +53,7 @@ class LoginController extends Controller
     {
 
         if ($user->status == 1) {
-            return redirect()->route('frontend.index')->with([
+            return redirect()->route('frontend.dashboard')->with([
                 'message' => 'Logged in successfully.',
                 'alert-type' => 'success'
             ]);
