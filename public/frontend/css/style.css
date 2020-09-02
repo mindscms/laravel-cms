@@ -1489,13 +1489,13 @@ Elements Styles
   transition: -webkit-transform 0.8s ease 0s, transform 0.8s ease 0s, opacity 0.5s ease 0s, visibility 0.5s ease 0s;
   visibility: hidden;
   z-index: 10;
-  padding-top: 20px; }
+}
   .block-minicart.is-visible {
     opacity: 1;
     visibility: visible; }
 .minicart-content-wrapper {
   width: 390px;
-  padding: 25px 20px;
+  padding: 0px 20px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
   margin: 4px 0 0;
   min-width: 100%;
@@ -1561,7 +1561,7 @@ Elements Styles
         border-color: #e59285;
         color: #fff; }
   .minicart-content-wrapper .single__items {
-    -moz-border-bottom-colors: none;
+    /*-moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
@@ -1569,15 +1569,13 @@ Elements Styles
     -o-border-image: none;
        border-image: none;
     border-style: solid none;
-    border-width: 1px 0;
-    margin: 20px -20px 0;
+    border-width: 1px 0;*/
+    margin: 0px -20px 0;
     overflow-x: auto;
     padding: 15px; }
     .minicart-content-wrapper .single__items .miniproduct .item01 .thumb {
       flex-basis: 23%; }
       .minicart-content-wrapper .single__items .miniproduct .item01 .thumb a {
-        border: 1px solid #ebebeb;
-        border-radius: 5px;
         padding: 3px;
         display: block; }
     .minicart-content-wrapper .single__items .miniproduct .item01 .content {
@@ -1797,7 +1795,7 @@ Header Styles
       line-height: 35px;
       width: 24px; }
     .header__area .header__sidebar__right > li.shopcart > a {
-      background: rgba(0, 0, 0, 0) url("../images/icons/cart.png") no-repeat scroll 0 center;
+      background: rgba(0, 0, 0, 0) url("../images/icons/bell.png") no-repeat scroll 0 center;
       height: 100%;
       line-height: 35px;
       width: 24px; }
@@ -1813,7 +1811,7 @@ Header Styles
         color: #555;
         font-size: 20px; }
     .header__area .header__sidebar__right > li.shopcart {
-      padding-left: 0px;
+      padding-left: 26px;
       padding-right: 26px;
       position: relative; }
 	  .header__area .header__sidebar__right > li.wishlist {
@@ -1838,7 +1836,7 @@ Header Styles
 			  position: absolute;
 			  right: 0;
 			  text-align: center;
-			  top: 44%;
+			  top: 40%;
 			  width: 16px;
 			}
     .header__area .header__sidebar__right > li.setting__bar__icon {
@@ -1895,7 +1893,7 @@ Header Styles
 		  background: rgba(0, 0, 0, 0) url("../images/icons/button-wishlist_white.png") no-repeat scroll 0 center;
 		}
 		.is-sticky.header__area .header__sidebar__right > li.shopcart > a {
-		  background: rgba(0, 0, 0, 0) url("../images/icons/cart_white.png") no-repeat scroll 0 center;
+		  background: rgba(0, 0, 0, 0) url("../images/icons/bell_white.png") no-repeat scroll 0 center;
 		}
 		.is-sticky.header__area .header__sidebar__right > li.setting__bar__icon > a {
 		  background: transparent url("../images/icons/icon_setting_white.png") no-repeat scroll left center;
@@ -1916,7 +1914,7 @@ Header Styles
   background: transparent url("../images/icons/icon_setting_white.png") no-repeat scroll left center;
 }
 .oth-page.header__area .header__sidebar__right > li.shopcart > a {
-  background: rgba(0, 0, 0, 0) url("../images/icons/cart_white.png") no-repeat scroll 0 center;
+  background: rgba(0, 0, 0, 0) url("../images/icons/bell_white.png") no-repeat scroll 0 center;
 }
 .oth-page.header__absolute {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);

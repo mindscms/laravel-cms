@@ -39,6 +39,7 @@
         </div>
     </aside>
     <!-- End Single Widget -->
+
     <!-- Start Single Widget -->
     <aside class="widget comment_widget">
         <h3 class="widget-title">Comments</h3>
@@ -59,22 +60,24 @@
         </ul>
     </aside>
     <!-- End Single Widget -->
+
     <!-- Start Single Widget -->
     <aside class="widget category_widget">
         <h3 class="widget-title">Categories</h3>
         <ul>
             @foreach($global_categories as $global_category)
-                <li><a href="#">{{ $global_category->name }}</a></li>
+                <li><a href="{{ route('frontend.category.posts', $global_category->slug) }}">{{ $global_category->name }}</a></li>
             @endforeach
         </ul>
     </aside>
     <!-- End Single Widget -->
+
     <!-- Start Single Widget -->
     <aside class="widget archives_widget">
         <h3 class="widget-title">Archives</h3>
         <ul>
             @foreach($global_archives as $key => $val)
-            <li><a href="#">{{ date("F", mktime(0, 0, 0, $key, 1)) . ' ' . $val }}</a></li>
+            <li><a href="{{ route('frontend.archive.posts', $key.'-'.$val) }}">{{ date("F", mktime(0, 0, 0, $key, 1)) . ' ' . $val }}</a></li>
             @endforeach
         </ul>
     </aside>
