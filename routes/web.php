@@ -23,6 +23,12 @@ Route::group(['middleware' => 'verified'], function () {
 
     Route::get('/create-post',                  ['as' => 'users.post.create',               'uses' => 'Frontend\UsersController@create_post']);
     Route::post('/create-post',                 ['as' => 'users.post.store',                'uses' => 'Frontend\UsersController@store_post']);
+
+    Route::get('/edit-post/{post_id}',          ['as' => 'users.post.edit',                 'uses' => 'Frontend\UsersController@edit_post']);
+    Route::put('/edit-post/{post_id}',          ['as' => 'users.post.update',               'uses' => 'Frontend\UsersController@update_post']);
+
+    Route::delete('/delete-post/{post_id}',     ['as' => 'users.post.destroy',              'uses' => 'Frontend\UsersController@destroy_post']);
+    Route::post('/delete-post-media/{media_id}',['as' => 'users.post.media.destroy',        'uses' => 'Frontend\UsersController@destroy_post_media']);
 });
 
 
