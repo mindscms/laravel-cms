@@ -9,6 +9,7 @@ use App\Models\Post;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Stevebauman\Purify\Facades\Purify;
 
 class IndexController extends Controller
 {
@@ -153,7 +154,7 @@ class IndexController extends Controller
             $data['email']          = $request->email;
             $data['url']            = $request->url;
             $data['ip_address']     = $request->ip();
-            $data['comment']        = $request->comment;
+            $data['comment']        = Purify::clean($request->comment);
             $data['post_id']        = $post->id;
             $data['user_id']        = $userId;
 
