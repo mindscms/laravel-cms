@@ -42,8 +42,16 @@
             @include('partial.frontend.header')
 
             <main>
-                @include('partial.flash')
-                @yield('content')
+                <div class="page-blog-details section-padding--lg bg--white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                @include('partial.flash')
+                            </div>
+                            @yield('content')
+                        </div>
+                    </div>
+                </div>
             </main>
 
             @include('partial.frontend.footer')
