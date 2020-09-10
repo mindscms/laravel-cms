@@ -49,19 +49,21 @@ Route::group(['middleware' => 'verified'], function () {
 
 
 
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'admin'], function() {
     // Authentication Routes...
     Route::get('/login',                            ['as' => 'admin.show_login_form',       'uses' => 'Backend\Auth\LoginController@showLoginForm']);
     Route::post('login',                            ['as' => 'admin.login',                 'uses' => 'Backend\Auth\LoginController@login']);
     Route::post('logout',                           ['as' => 'admin.logout',                'uses' => 'Backend\Auth\LoginController@logout']);
-    Route::get('password/reset',                    ['as' => 'admin.password.request',      'uses' => 'Backend\Auth\ForgotPasswordController@showLinkRequestForm']);
-    Route::post('password/email',                   ['as' => 'admin.password.email',        'uses' => 'Backend\Auth\ForgotPasswordController@sendResetLinkEmail']);
-    Route::get('password/reset/{token}',            ['as' => 'admin.password.reset',        'uses' => 'Backend\Auth\ResetPasswordController@showResetForm']);
-    Route::post('password/reset',                   ['as' => 'admin.password.update',       'uses' => 'Backend\Auth\ResetPasswordController@reset']);
-    Route::get('email/verify',                      ['as' => 'admin.verification.notice',   'uses' => 'Backend\Auth\VerificationController@show']);
-    Route::get('/email/verify/{id}/{hash}',         ['as' => 'admin.verification.verify',   'uses' => 'Backend\Auth\VerificationController@verify']);
-    Route::post('email/resend',                     ['as' => 'admin.verification.resend',   'uses' => 'Backend\Auth\VerificationController@resend']);
+    Route::get('password/reset',                    ['as' => 'password.request',            'uses' => 'Backend\Auth\ForgotPasswordController@showLinkRequestForm']);
+    Route::post('password/email',                   ['as' => 'password.email',              'uses' => 'Backend\Auth\ForgotPasswordController@sendResetLinkEmail']);
+    Route::get('password/reset/{token}',            ['as' => 'password.reset',              'uses' => 'Backend\Auth\ResetPasswordController@showResetForm']);
+    Route::post('password/reset',                   ['as' => 'password.update',             'uses' => 'Backend\Auth\ResetPasswordController@reset']);
 
+    Route::group(['middleware' => ['roles', 'role:admin|editor']], function() {
+        Route::get('/',                             ['as' => 'admin.index_route',           'uses' => 'Backend\AdminController@index']);
+        Route::get('/index',                        ['as' => 'admin.index',                 'uses' => 'Backend\AdminController@index']);
+
+    });
 
 });
 

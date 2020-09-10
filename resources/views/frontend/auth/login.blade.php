@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app-auth')
 
 @section('content')
     <section class="my_account_area pt--80 pb--55 bg--white">
