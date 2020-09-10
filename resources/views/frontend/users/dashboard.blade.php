@@ -20,7 +20,7 @@
                             @forelse($posts as $post)
                                 <tr>
                                     <td>{{ $post->title }}</td>
-                                    <td>{{ $post->comments_count }}</td>
+                                    <td><a href="{{ route('users.comments', ['post' => $post->id]) }}">{{ $post->comments_count }}</a></td>
                                     <td>{{ $post->status }}</td>
                                     <td>
                                         <a href="{{ route('users.post.edit', $post->id) }}" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>

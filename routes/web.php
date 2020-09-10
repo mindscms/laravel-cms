@@ -20,6 +20,11 @@ Route::post('email/resend',                     ['as' => 'verification.resend', 
 Route::group(['middleware' => 'verified'], function () {
     Route::get('/dashboard',                    ['as' => 'frontend.dashboard',              'uses' => 'Frontend\UsersController@index']);
 
+    Route::any('user/notifications/get', 'Frontend\NotificationsController@getNotifications');
+    Route::any('user/notifications/read', 'Frontend\NotificationsController@markAsRead');
+    Route::any('user/notifications/read/{id}', 'Frontend\NotificationsController@markAsReadAndRedirect');
+
+
     Route::get('/edit-info',                    ['as' => 'users.edit_info',                 'uses' => 'Frontend\UsersController@edit_info']);
     Route::post('/edit-info',                   ['as' => 'users.update_info',               'uses' => 'Frontend\UsersController@update_info']);
     Route::post('/edit-password',               ['as' => 'users.update_password',           'uses' => 'Frontend\UsersController@update_password']);

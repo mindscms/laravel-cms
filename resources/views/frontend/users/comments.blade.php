@@ -39,7 +39,7 @@
                             </tbody>
                             <tfoot>
                             <tr>
-                                <td colspan="4">{!! $comments->links() !!}</td>
+                                <td colspan="4">{!! $comments->appends(request()->input())->links() !!}</td>
                             </tr>
                             </tfoot>
                         </table>

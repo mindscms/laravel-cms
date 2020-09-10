@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2.5",
+        "beyondcode/laravel-websockets": "^1.6",
         "cviebrock/eloquent-sluggable": "^7.0",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
@@ -22,6 +23,7 @@
         "mindscms/entrust": "^1.0",
         "nicolaslopezj/searchable": "^1.13",
         "predis/predis": "^1.1",
+        "pusher/pusher-php-server": "~4.0",
         "stevebauman/purify": "^3.0"
     },
     "require-dev": {
