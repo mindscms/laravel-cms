@@ -95,14 +95,15 @@
 <!-- //Header -->
 <!-- Start Search Popup -->
 <div class="box-search-content search_active block-bg close__top">
-    <form id="search_mini_form" class="minisearch" action="#">
-        <div class="field__search">
-            <input type="text" placeholder="Search entire store here...">
-            <div class="action">
-                <a href="#"><i class="zmdi zmdi-search"></i></a>
-            </div>
+    {!! Form::open(['route' => 'frontend.search', 'method' => 'get', 'id' => 'search_mini_form', 'class' => 'minisearch']) !!}
+    <div class="field__search">
+        {!! Form::text('keyword', old('keyword', request()->keyword), ['placeholder' => 'Search...']) !!}
+        <div class="action">
+            <a href="javascript:void(0);" onclick="event.preventDefault(); document.getElementById('search_mini_form').submit();"><i class="zmdi zmdi-search"></i></a>
         </div>
-    </form>
+    </div>
+    {!! Form::close() !!}
+
     <div class="close__wrap">
         <span>close</span>
     </div>
