@@ -85,7 +85,7 @@
                 showRemove: false,
                 showUpload: false,
                 overwriteInitial: false,
-            })
+            });
 
         });
     </script>

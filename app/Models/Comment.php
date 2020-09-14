@@ -14,4 +14,9 @@ class Comment extends Model
         return $this->belongsTo(Post::class);
     }
 
+    public function status()
+    {
+        return $this->status == 1 ? 'Active' : 'Inactive';
+    }
+
 }
