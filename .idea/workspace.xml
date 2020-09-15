@@ -20,28 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="002c99af-ee21-40bb-a13a-e170afd8d80c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/mindscms-blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mindscms-blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Notifications/NewCommentForPostOwnerNotify.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/NewCommentForPostOwnerNotify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/post.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/users/comments.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/users/comments.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/users/create_post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/users/create_post.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/users/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/users/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/users/edit_comment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/users/edit_comment.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/users/edit_info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/users/edit_info.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/users/edit_post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/users/edit_post.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partial/frontend/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partial/frontend/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,23 +195,23 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/frontend/js/bootstrap-fileinput" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\resources\views\layouts" />
+      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\public\backend" />
+      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\public\frontend\js\bootstrap-fileinput" />
+      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\public\frontend\js\summernote" />
+      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\public\assets\users" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\app\Http\Controllers\Backend" />
       <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\resources\views\frontend" />
       <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\app\Models" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\public\frontend\js\bootstrap-fileinput" />
-      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\public\frontend\js\summernote" />
-      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\public\assets\users" />
-      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\public\assets\posts" />
-      <recent name="C:\xampp\htdocs\laravel\course\mindscms-blog\resources\views\frontend" />
     </key>
   </component>
   <component name="RunManager">
@@ -255,7 +235,7 @@
       <workItem from="1597686133435" duration="32859000" />
       <workItem from="1598709004597" duration="22174000" />
       <workItem from="1599168735781" duration="19917000" />
-      <workItem from="1599601906385" duration="5749000" />
+      <workItem from="1599601906385" duration="17448000" />
     </task>
     <servers />
   </component>
@@ -279,6 +259,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2690" y="399" key="#Composer/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597266072061" />
+    <state x="760" y="224" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599694250391">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="760" y="224" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599694250391" />
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598740096775">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
