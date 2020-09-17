@@ -44,7 +44,7 @@
     </div>
 
     <div class="col-lg-3 col-12 md-mt-40 sm-mt-40">
-                    @include('partial.frontend.users.sidebar')
-                </div>
+        @include('partial.frontend.users.sidebar')
+    </div>
 
 @endsection
