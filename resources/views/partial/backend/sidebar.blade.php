@@ -36,7 +36,7 @@
                              aria-labelledby="heading_{{ $menu->route }}" data-parent="#accordionSidebar">
                             <div class="bg-white py-2 collapse-inner rounded">
                                 @foreach($menu->appeardChildren as $sub_menu)
-                                    <a class="collapse-item {{ (int)(getParentOf($current_page)+1) == $sub_menu->id ? 'active' : '' }}" href="{{ route('admin.' . $sub_menu->as) }}">{{ $sub_menu->display_name }}</a>
+                                    <a class="collapse-item {{ (int)(getParentIdOf($current_page)+1) == $sub_menu->id ? 'active' : '' }}" href="{{ route('admin.' . $sub_menu->as) }}">{{ $sub_menu->display_name }}</a>
                                 @endforeach
                             </div>
                         </div>
