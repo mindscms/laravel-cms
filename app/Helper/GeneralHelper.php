@@ -1,6 +1,13 @@
 <?php
 
 use App\Models\Permission;
+use Spatie\Valuestore\Valuestore;
+
+function getSettingsOf($key) {
+    $settings = Valuestore::make(config_path('settings.json'));
+    return $settings->get($key);
+}
+
 
 function getParentShowOf($param)
 {
@@ -20,7 +27,7 @@ function getParentIdOf($param)
 {
     $f = str_replace('admin.', '', $param);
     $perm = Permission::where('as', $f)->first();
-    return $perm ? $perm->id : $f;
+    return $perm ? $perm->id : null;
 }
 
 function getIdMenuOf($param)

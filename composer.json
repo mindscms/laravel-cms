@@ -24,6 +24,7 @@
         "nicolaslopezj/searchable": "^1.13",
         "predis/predis": "^1.1",
         "pusher/pusher-php-server": "~4.0",
+        "spatie/valuestore": "^1.2",
         "stevebauman/purify": "^3.0"
     },
     "require-dev": {

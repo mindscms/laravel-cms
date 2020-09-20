@@ -18,7 +18,7 @@
 
     @role(['admin'])
         @foreach($admin_side_menu as $menu)
-            @if (count($menu->appeardChildren) == 0)
+            @if (count($menu->appearedChildren) == 0)
                 <li class="nav-item {{ $menu->id == getParentShowOf($current_page) ? 'active' : '' }}">
                     <a href="{{ route('admin.'. $menu->as) }}" class="nav-link">
                         <i class="{{ $menu->icon != null ? $menu->icon : 'fa fa-home' }}"></i>
@@ -31,12 +31,12 @@
                         <i class="{{ $menu->icon != null ? $menu->icon : 'fa fa-home' }}"></i>
                         <span>{{ $menu->display_name }}</span>
                     </a>
-                    @if (isset($menu->appeardChildren) && count($menu->appeardChildren) > 0)
+                    @if (isset($menu->appearedChildren) && count($menu->appearedChildren) > 0)
                         <div id="collapse_{{ $menu->route }}" class="collapse {{ in_array($menu->parent_show, [getParentShowOf($current_page), getParentOf($current_page)]) ? 'show' : '' }}"
                              aria-labelledby="heading_{{ $menu->route }}" data-parent="#accordionSidebar">
                             <div class="bg-white py-2 collapse-inner rounded">
-                                @foreach($menu->appeardChildren as $sub_menu)
-                                    <a class="collapse-item {{ (int)(getParentIdOf($current_page)+1) == $sub_menu->id ? 'active' : '' }}" href="{{ route('admin.' . $sub_menu->as) }}">{{ $sub_menu->display_name }}</a>
+                                @foreach($menu->appearedChildren as $sub_menu)
+                                    <a class="collapse-item {{ getParentOf($current_page) != null && (int)(getParentIdOf($current_page)+1) == $sub_menu->id ? 'active' : '' }}" href="{{ route('admin.' . $sub_menu->as) }}">{{ $sub_menu->display_name }}</a>
                                 @endforeach
                             </div>
                         </div>
@@ -49,7 +49,7 @@
     @role(['editor'])
     @foreach($admin_side_menu as $menu)
         @permission($menu->name)
-            @if (count($menu->appeardChildren) == 0)
+            @if (count($menu->appearedChildren) == 0)
                 <li class="nav-item {{ $menu->id == getParentShowOf($current_page) ? 'active' : '' }}">
                     <a href="{{ route('admin.'. $menu->as) }}" class="nav-link">
                         <i class="{{ $menu->icon != null ? $menu->icon : 'fa fa-home' }}"></i>
@@ -62,11 +62,11 @@
                         <i class="{{ $menu->icon != null ? $menu->icon : 'fa fa-home' }}"></i>
                         <span>{{ $menu->display_name }}</span>
                     </a>
-                    @if (isset($menu->appeardChildren) && count($menu->appeardChildren) > 0)
+                    @if (isset($menu->appearedChildren) && count($menu->appearedChildren) > 0)
                         <div id="collapse_{{ $menu->route }}" class="collapse {{ in_array($menu->parent_show, [getParentShowOf($current_page), getParentOf($current_page)]) ? 'show' : '' }}"
                              aria-labelledby="heading_{{ $menu->route }}" data-parent="#accordionSidebar">
                             <div class="bg-white py-2 collapse-inner rounded">
-                                @foreach($menu->appeardChildren as $sub_menu)
+                                @foreach($menu->appearedChildren as $sub_menu)
                                     <a class="collapse-item {{ (int)(getParentOf($current_page)+1) == $sub_menu->id ? 'active' : '' }}" href="{{ route('admin.' . $sub_menu->as) }}">{{ $sub_menu->display_name }}</a>
                                 @endforeach
                             </div>
