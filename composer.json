@@ -20,6 +20,7 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.1",
         "laravelcollective/html": "^6.1",
+        "livewire/livewire": "^2.2",
         "mindscms/entrust": "^1.0",
         "nicolaslopezj/searchable": "^1.13",
         "predis/predis": "^1.1",
