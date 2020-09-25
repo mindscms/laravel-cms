@@ -22,6 +22,7 @@
     <link href="{{ asset('backend/vendor/bootstrap-fileinput/css/fileinput.min.css') }}" rel="stylesheet">
     <link href="{{ asset('backend/vendor/summernote/summernote-bs4.min.css') }}" rel="stylesheet">
     @yield('style')
+    @livewireStyles
 </head>
 <body id="page-top">
     <div id="app">
@@ -89,15 +90,10 @@
     <script src="{{ asset('backend/vendor/bootstrap-fileinput/themes/fas/theme.min.js') }}"></script>
     <script src="{{ asset('backend/vendor/summernote/summernote-bs4.min.js') }}"></script>
 
-    <!-- Page level plugins -->
-    <script src="{{ asset('backend/vendor/chart.js/Chart.min.js') }}"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="{{ asset('backend/js/demo/chart-area-demo.js') }}"></script>
-    <script src="{{ asset('backend/js/demo/chart-pie-demo.js') }}"></script>
-
     <script src="{{ asset('backend/js/custom.js') }}"></script>
 
     @yield('script')
+    @livewireScripts
+    @stack('scripts')
 </body>
 </html>
